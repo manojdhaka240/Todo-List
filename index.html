@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+
+<body>
+    <h1 class="text-center fs-1 mb-3 text-secondary">Todo List</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="input-group mb-3 w-75 p-3">
+                    <input type="text" class="form-control" id="title" placeholder="Add title"
+                        aria-label="Recipient's username" minlength="1" maxlength = "60"aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="todoButton">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <table class="table table-striped table-responsive text-center table-hover w-75 p-3" id="todoList">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Done</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
